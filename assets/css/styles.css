@@ -210,13 +210,47 @@ body {
 @keyframes pulse { 50% { transform: scale(1.18); } }
 @keyframes fall { to { transform: translate3d(var(--drift), 105vh, 0) rotate(720deg); opacity: .15; } }
 
+.photo-section {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 5rem 1.25rem;
+  position: relative;
+}
+.full-photo-frame {
+  width: min(100%, 52rem);
+  margin: 0;
+  display: grid;
+  gap: .9rem;
+  text-align: center;
+}
+.full-photo-frame img {
+  width: 100%;
+  max-height: 72svh;
+  display: block;
+  object-fit: contain;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, .025);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, .38);
+}
+.full-photo-frame figcaption {
+  color: var(--muted);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  letter-spacing: .04em;
+}
+
 @media (min-width: 700px) {
   .story-section { padding-inline: 7%; }
   .story-card { width: 38rem; margin: 0; }
   .story-card-right { margin-left: auto; }
-  .phone-photo { width: 23rem; position: absolute; right: -28rem; top: 1rem; }
-  .portrait-photo { width: 24rem; position: absolute; right: 31rem; top: 0; }
-  .red-photo { width: 26rem; position: absolute; right: -31rem; top: -1rem; }
+  .phone-photo { width: 23rem; position: static; }
+  .portrait-photo { width: 24rem; position: static; }
+  .red-photo { width: 26rem; position: static; }
+  .photo-section { padding-inline: 7%; }
+  .full-photo-frame { width: min(82%, 48rem); }
   .answers { gap: 1rem; }
   .answer { min-width: 8.5rem; }
 }
