@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090615">
+  <meta name="description" content="Uma pequena viagem pela nossa história.">
+  <title>João & Isabella</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow reveal">01 · 10 · 2026</p>
+      <h1 id="hero-title" class="reveal">João <span>&</span> Isabella</h1>
+      <p class="hero-copy reveal">Algumas histórias começam em silêncio.<br>Essa começou entre mensagens.</p>
+      <a class="scroll-cue reveal" href="#match" aria-label="Descobrir nossa história">
+        <span>Nossa história</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m0 0-7-7m7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <section class="story-section" id="match">
+      <div class="orbit orbit-one" aria-hidden="true"></div>
+      <article class="story-card reveal">
+        <div class="card-number">01</div>
+        <p class="story-kicker">O primeiro capítulo</p>
+        <h2>Deu match.</h2>
+        <p>Em 1º de outubro de 2026, o universo abriu uma pequena brecha — e a gente entrou nela.</p>
+        <figure class="photo-frame phone-photo">
+          <img src="assets/images/primeira-conversa.jpeg" alt="Conversa em que Isabella e João deram match" loading="lazy">
+        </figure>
+      </article>
+    </section>
+
+    <section class="story-section story-section-wide">
+      <article class="story-card story-card-right reveal">
+        <div class="card-number">02</div>
+        <p class="story-kicker">Sem perceber</p>
+        <h2>Uma conversa virou encontro.</h2>
+        <p>E os encontros começaram a parecer casa.</p>
+        <figure class="photo-frame portrait-photo">
+          <img src="assets/images/nos.jpeg" alt="Isabella em um momento especial" loading="lazy">
+        </figure>
+      </article>
+    </section>
+
+    <section class="story-section">
+      <article class="story-card reveal">
+        <div class="card-number">03</div>
+        <p class="story-kicker">Hoje</p>
+        <h2>E tudo ficou mais bonito.</h2>
+        <p>Você trouxe cor aos meus dias, calma ao meu coração e vontade de construir algo que seja só nosso.</p>
+        <figure class="photo-frame red-photo">
+          <img src="assets/images/momento-especial.jpeg" alt="Momento especial vivido pelo casal" loading="lazy">
+        </figure>
+      </article>
+    </section>
+
+    <section class="proposal" id="pedido">
+      <div class="proposal-glow" aria-hidden="true"></div>
+      <div class="proposal-content reveal">
+        <p class="proposal-kicker">Meu coração pediu para dizer</p>
+        <h2>Isabella,<br>quer namorar comigo?</h2>
+        <p class="proposal-copy">Quero viver cada novo capítulo com você — nas risadas, nos planos e até nos dias comuns.</p>
+
+        <div class="answers" id="answers">
+          <button class="answer answer-yes" id="yesButton" type="button">Quero! <span>♥</span></button>
+          <button class="answer answer-no" id="noButton" type="button">Não</button>
+        </div>
+      </div>
+
+      <div class="celebration" id="celebration" role="status" aria-live="polite" aria-hidden="true">
+        <p>Eu sabia que o meu universo tinha encontrado o lugar certo.</p>
+        <h2>Agora somos nós, Isabella & João.</h2>
+        <div class="infinity" aria-hidden="true">♥</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
